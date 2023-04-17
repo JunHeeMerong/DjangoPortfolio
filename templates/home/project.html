@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./static/style1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <button data-animation-scroll="true" data-target="#main">JunHee</button>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <button data-animation-scroll="true" data-target="#about">About</button>
+                    </li>
+                    <li>
+                        <button data-animation-scroll="true" data-target="#features">Features</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <h4>Welcome</h4>
+            <h2>I'm A <span></span></h2>
+            <p>대충 자기소개하는 글</p>
+            <p>대충 자기소개하는 글 2</p>
+            <button class="download">DOWNLOAD CV</button>
+            <button class="mouse"><i class="fa-solid fa-computer-mouse"></i></button>
+        </div>
+    </main>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="title">
+                <h4>Who Am I</h4>
+                <h2>About Me</h2>
+            </div>
+            <div class="about-self">
+                <div class="left">
+                    <img src="./static/images/me_alone.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h3>Hello, <strong>I'm JunHeeLee</strong></h3>
+                    <p>자기소개하는 글1</p>
+                    <p>자기소개하는 글2</p>
+                    <p>자기소개하는 글3</p>
+                    <p>자기소개하는 글4</p>
+                    <p>자기소개하는 글5</p>
+                    <p>자기소개하는 글6</p>
+                    <p>자기소개하는 글7</p>
+                    <div class="social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                             <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="do">
+        <div class="container">
+            <div class="title">
+                <h4>Features</h4>
+                <h2>What I Do</h2>
+            </div>
+            <div class="do-me">
+                <div class ="do-inner">
+                    <div class="icon">
+                        <i><img src="./static/images/python.jpg" alt=""></i> 
+                    </div>
+                    <div class="content">
+                        <h3>PYTHON</h3> 
+                        <p>대충 python 할 줄 안다는 소개글</p>
+                    </div>
+                </div>
+                <div class="do-inner">
+                    <div class="icon">
+                        <i><img src="./static/images/django.png" alt=""></i> 
+                    </div>
+                    <div class="content">
+                        <h3>DJANGO</h3> 
+                        <p>대충 django 할 줄 안다는 소개글</p>
+                    </div>
+                </div>
+                <div class="do-inner">
+                    <div class="icon">
+                        <i><img src="./static/images/mysql.png" alt=""></i> 
+                    </div>
+                    <div class="content">
+                        <h3>MYSQL</h3> 
+                        <p>대충 mysql 할 줄 안다는 소개글</p>
+                    </div>
+                </div>
+            </div>
+            <form class='programmers'>
+                <h2>프로그래머스 점수</h2>
+                <div>
+                    <h3>아이디</h3>
+                    <input id='userid' type='text'/>
+                </div>
+                <div>
+                    <h3>비밀번호</h3>
+                    <input id='password' type='password'/>
+                </div>
+                <div class='score'>
+                    <box>점수
+                    </box>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="./static/script.js"></script>
+</body>
+</html>
