@@ -2,7 +2,7 @@
     // span 요소 노드 가져오기
     const spanEl = document.querySelector("main h2 span");
     // 화면에 표시할 문장 배열
-    const txtArr = ['여기다가','이것저것','넣을수있음','미소자랑','이렇게'];
+    const txtArr = ['여기다가','이것저것','자랑할거 써봐요'];
     // 배열의 인덱스 초깃값
     let index = 0;
     // 화면에 표시할 문장 배열에서 요소를 하나 가져온 뒤, 배열로 만들기
