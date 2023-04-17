@@ -1,0 +1,15 @@
+1. 가상환경진입
+cd venvs
+cd myproject
+cd bin
+. activate
+
+2. 장고폴더이동
+cd ~/projects
+cd portfolio
+
+3. 깃허브 내려받기
+git pull
+
+4. 서버실행
+python manage.py runserver 0:8000
