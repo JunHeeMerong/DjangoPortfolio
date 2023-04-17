@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.http import HttpResponseNotAllowed
 from .forms import QuestionForm, AnswerForm
 from .models import Question
+from .programmers import score
 
 # Create your views here.
 def home(request):

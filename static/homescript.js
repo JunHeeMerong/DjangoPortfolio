@@ -44,22 +44,6 @@ function scrollCheck(){
   }
 }
 
-// function home_click(){
-//   window.scrollTo(0,0);
-// }
-// function About_click(){
-//     window.scrollTo(0,750);
-// }
-// function Features_click(){
-//     window.scrollTo(0,2100);
-// }
-// function Portfolio_click(){
-//     window.scrollTo(0,2586);
-// }
-// function Contact_click(){
-//     window.scrollTo(0,3624);
-// }
-
 /* 애니메이션 스크롤 이동 */
 const animationMove = function(selector){
   // ① selector 매개변수로 이동할 대상 요소 노드 가져오기

@@ -269,6 +269,15 @@ section .container .programmers div{
     margin:1%;
     cursor:pointer;
 }
+section .container .programmers button{
+    position:relative;
+    top: -15%;
+    right: -2%;
+    width: 13%;
+    height: 13%;
+    border:1px solid black;
+    border-radius: 3px 3px 3px 3px; 
+}
 section .container .programmers div.score{
     position:relative;
     top:-79%;
@@ -277,7 +286,7 @@ section .container .programmers div.score{
     width:47%;
     height:74%;
     padding:0.5rem;
-    border:1px solid red;
+    border:1px solid blue;
     border-radius: 10px 10px 10px 10px; 
     float:right;
     margin:1%;
