@@ -5,9 +5,9 @@ import time
 
 def score():
     print('아이디를 입력해주세요.')
-    id_email = str(input())
+    # id_email = str(input())
     print('비밀번호를 입력해주세요.')
-    password = str(input())
+    # password = str(input())
     noopen = webdriver.ChromeOptions()
     noopen.add_argument("headless")
     driver = webdriver.Chrome(options=noopen)
