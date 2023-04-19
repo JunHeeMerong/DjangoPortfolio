@@ -18,7 +18,10 @@ from django.urls import path, include
 from Jun import views
 
 urlpatterns = [
-    path('',views.home),
+    # path('',views.home),
+    path('',views.mainpage),
+    path('about/',views.about),
+    path('features/',views.features),
     path('admin/', admin.site.urls),
     path('jun/', include('Jun.urls')),
 ]

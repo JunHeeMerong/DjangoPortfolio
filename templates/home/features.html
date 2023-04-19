@@ -1,0 +1,56 @@
+{% extends 'homebase.html' %}
+{% block content %}
+<section>
+<div class="container">
+    <div class="title">
+        <h4>Features</h4>
+        <h2>What I Do</h2>
+    </div>
+    <div class="do-me">
+        <div class ="do-inner">
+            <div class="icon">
+                <i><img src="../static/images/python.jpg" alt=""></i> 
+            </div>
+            <div class="content">
+                <h3>PYTHON</h3> 
+                <p>대충 python 할 줄 안다는 소개글</p>
+            </div>
+        </div>
+        <div class="do-inner">
+            <div class="icon">
+                <i><img src="../static/images/django.png" alt=""></i> 
+            </div>
+            <div class="content">
+                <h3>DJANGO</h3> 
+                <p>대충 django 할 줄 안다는 소개글</p>
+            </div>
+        </div>
+        <div class="do-inner">
+            <div class="icon">
+                <i><img src="../static/images/mysql.png" alt=""></i> 
+            </div>
+            <div class="content">
+                <h3>MYSQL</h3> 
+                <p>대충 mysql 할 줄 안다는 소개글</p>
+            </div>
+        </div>
+    </div>
+    <form class='programmers'>
+        <h2>프로그래머스 점수</h2>
+        <div>
+            <h3>아이디</h3>
+            <input id='userid' type='text'/>
+        </div>
+        <div>
+            <h3>비밀번호</h3>
+            <input id='password' type='password'/>
+        </div>
+        <button class="btn btn-programmers">점수확인</button>
+        <div class='score'>
+            <p>점수</p>
+            <p>현재점수 : {{ score }}</p>
+        </div>
+    </form>
+</div>
+</section>
+{% endblock %}

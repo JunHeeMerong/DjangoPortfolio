@@ -1,20 +1,22 @@
-<header>
-    <div class="container">
-        <h1>
-            <button data-animation-scroll="true" data-target="#main">JunHee</button>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <button data-animation-scroll="true" data-target="#about">About</button>
-                </li>
-                <li>
-                    <button data-animation-scroll="true" data-target="#features">Features</button>
-                </li>
-                <li>
-                    <a href="/jun">Question</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'navstyle.css' %}">
+<div id="navbar home-navbar" class="navbar home-navbar">
+    <h1>
+        {% comment %} href="{% url 'Jun:index' %}" => url을 Jun폴더에 views.py의 index로 실행 {% endcomment %}
+        {% comment %} <a class="navbar-brand" href="{% url 'Jun:index' %}">JunHee</a>  {% endcomment %}
+        <a class="home-navbar navbar" href="">JunHee</a>
+    </h1>
+    <nav>
+        <ul>
+            <li>
+                <a id="test" href="about">About</a>
+            </li>
+            <li>
+                <a class="home-navbar navbar" href="features">Features</a>
+            </li>
+            <li>
+                <a href="/jun">Question</a>
+            </li>
+        </ul>
+    </nav>
+</div>

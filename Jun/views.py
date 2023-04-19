@@ -10,6 +10,15 @@ def home(request):
     context = {'score' : score()}
     return render(request, 'home/project.html', context)
 
+def mainpage(request):
+    return render(request, 'home/mainpage.html')
+
+def about(request):
+    return render(request, 'home/about.html')
+
+def features(request):
+    return render(request, 'home/features.html')
+
 def index(request):
     question_list = Question.objects.order_by('-create_date')
     context = {'question_list': question_list}
