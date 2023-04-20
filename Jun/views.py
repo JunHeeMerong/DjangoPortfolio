@@ -7,8 +7,7 @@ from .programmers import score
 
 # Create your views here.
 def home(request):
-    context = {'score' : score()}
-    return render(request, 'home/project.html', context)
+    return render(request, 'home/project.html')
 
 def mainpage(request):
     return render(request, 'home/mainpage.html')
@@ -17,7 +16,8 @@ def about(request):
     return render(request, 'home/about.html')
 
 def features(request):
-    return render(request, 'home/features.html')
+    context = {'score' : score()}
+    return render(request, 'home/features.html',context)
 
 def index(request):
     question_list = Question.objects.order_by('-create_date')
