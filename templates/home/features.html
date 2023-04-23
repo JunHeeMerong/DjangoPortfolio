@@ -13,7 +13,7 @@
             </div>
             <div class="content">
                 <h3>PYTHON</h3> 
-                <p>프로그래머스 코딩테스트 1716점</p>
+                <p>프로그래머스 코딩테스트 {{ score }}</p>
                 <p>PCCP Lv3(730점)</p>
                 <p>pandas, selenium 사용가능</p>
                 <p>DFS,BFS,deque,이분탐색</p>
@@ -41,19 +41,22 @@
         </div>
     </div>
     <form class='programmers'>
-        <h2>프로그래머스 점수</h2>
-        <div>
+        <h2 class='box1'>프로그래머스 점수</h2>
+        <div class='id'>
             <h3>아이디</h3>
             <input id='userid' type='text'/>
         </div>
-        <div>
+        <div class='pw'>
             <h3>비밀번호</h3>
             <input id='password' type='password'/>
         </div>
-        <button class="btn btn-programmers">점수확인</button>
-        <div class='score'>
-            <p>점수</p>
-            <p>현재점수 : {{ score }}</p>
+        <button type='submit' class="btn btn-programmers">점수확인</button>
+        <div class='score_user'>
+            <p>점수 : </p>
+        </div>
+        <h2 class='box2'>adimn 점수</h2>
+        <div class='score_admin'>
+            <p>점수 : {{ score }} </p>
         </div>
     </form>
 </div>

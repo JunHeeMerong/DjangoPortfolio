@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['127.0.0.1','43.200.120.132']
 # Application definition
 
 INSTALLED_APPS = [
+    'common.apps.CommonConfig',
     'Jun.apps.JunConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -128,3 +129,9 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 로그인시 이동하는 URL
+LOGIN_REDIRECT_URL = '/jun'
+
+# 로그아웃시 이동하는 URL
+LOGOUT_REDIRECT_URL = '/jun'
