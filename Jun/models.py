@@ -12,7 +12,6 @@ class Question(models.Model):
     voter = models.ManyToManyField(User, related_name='voter_question')  # 추천인 추가
     click = models.IntegerField(null=True, default=0) # 클릭
 
-
 class Answer(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_answer')
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
