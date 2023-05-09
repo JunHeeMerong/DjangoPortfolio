@@ -25,5 +25,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('jun/', include('Jun.urls')),
     path('common/',include('common.urls')),
-    path('/jun',base_views.index,name='index')
+    path('jun',base_views.index,name='index')
 ]
